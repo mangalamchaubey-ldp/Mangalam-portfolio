@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style/styles.css" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.jpg">
+    <link rel="stylesheet" href="path/to/fontawesome.min.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Portfolio Website</title>
+</head>
+<body>
+<header>
+      <div class="container">
+            <nav>
+                <img src="./images/logo.jpg" class="logo" >
+                <ul id="sidemenu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#portfolio">Gallery</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                        <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+          <div class="header-container">
+            <div class="header-text">
+                <p>Dev Intern</p>
+                <h1>Hi, I'm <span>Mangalam</span><br> Web Developer</h1> 
+            </div>
+            <div class="header-image">
+               <img src="./images/header-img.png">
+            </div>
+        </div>
+      </div>
+
+      <!------about----->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <h1 class="subtitle">About me</h1>
+
+                <p class="about-me-content"> This is mangalam and I am student at BBDITM lucknow . <br>I love coding and building things and problem solving through it!</p>
+            </div>
+            <div class="about-col-2">
+
+                <div class="tab-content-header">
+                 
+                <div class="tab-contents active-tab" id="skills">
+                    <p class="tab-links active-link links" onclick="opentab('skills')"> Skills</p>
+                    <ul>
+                        <li><span>Web Development</span><br>Making websites</li>
+                        <li><span>JAVA</span><br>Problem Solving in it </li>
+                        <li><span>ML</span><br>Prediction Model</li>
+
+                    </ul>
+                </div>
+          
+                <div class="tab-contents" id="education">
+                    <p class="tab-links active-link links" onclick="opentab('education')"> Education</p>
+                    <ul>
+                        <li><span>2023</span><br>Btech</li>
+                        <li><span>2017-2018</span><br>Class 12th</li>
+                        <li><span>2015-2016</span><br>Class 10th</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-----gallery section of the page-->
+
+<div id="portfolio">
+    <div class="container">
+     <h1 class="subtitle">Gallery</h1>
+   
+     <div class="work-list">
+         <div class="work">
+            <img src="./images/work1.jpg" alt="" class="work-images">
+          </div>
+         <div class="work" >
+            <img src="./images/work2.jpg" alt="" class="work-images">
+            
+         </div>
+         <div class="work">
+            <img src="./images/work3.jpg" alt="" class="work-images">
+        </div>
+            <img src="./images/work4.jpg" alt="" class="work-images">
+            <div class="work">
+            <img src="./images/work5.jpg" alt="" class="work-images">
+        </div>
+        <div class="work">
+            <img src="./images/work6.jpg" alt="" class="work-images">
+        </div>
+
+         </div>
+         
+
+     </div>
+     <a href="#" class='btn'>See More</a>
+
+
+    </div>
+
+</div>
+<!---------contact me code is here-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                
+                <h1 class="subtitle">Contact Me</h1>
+                <div class="email-icons">
+                <p><i class="fa-solid fa-envelope"></i>contact@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>01223456789</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mangalam-chaubey-586b02222/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required >
+                    <textarea name="Message" placeholder="your message" cols="30" rows="6"></textarea>
+                    <button type="submit" class="submit-btn">Submit</button>
+
+
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>MADE IN LKO</p>
+</div>
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+<!-- <script>
+    var tablinks=document.getElementsByClassName("tab-links")
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablinks of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+    }
+
+    // let experience=document.getElementById('experience');
+    // experience.addEventListener('click',()=>{
+    //     experience.classList.add("active-link");
+    // })
+    
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("");
+    
+    </script> -->
+
+    <script>
+    let sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+    </script>
+
+
+
+    
+</body>
+</html>
